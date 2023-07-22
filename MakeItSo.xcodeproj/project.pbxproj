@@ -11,6 +11,8 @@
 		930BDA762A6824AA003A9DFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930BDA752A6824AA003A9DFC /* ContentView.swift */; };
 		930BDA782A6824AF003A9DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930BDA772A6824AF003A9DFC /* Assets.xcassets */; };
 		930BDA7B2A6824AF003A9DFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930BDA7A2A6824AF003A9DFC /* Preview Assets.xcassets */; };
+		930BDA822A682EB6003A9DFC /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930BDA812A682EB6003A9DFC /* Reminder.swift */; };
+		931A2D2A2A697149007324BB /* AddReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931A2D292A697149007324BB /* AddReminderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		930BDA752A6824AA003A9DFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		930BDA772A6824AF003A9DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		930BDA7A2A6824AF003A9DFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		930BDA812A682EB6003A9DFC /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		931A2D292A697149007324BB /* AddReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +57,10 @@
 			children = (
 				930BDA732A6824AA003A9DFC /* MakeItSoApp.swift */,
 				930BDA752A6824AA003A9DFC /* ContentView.swift */,
+				931A2D292A697149007324BB /* AddReminderView.swift */,
 				930BDA772A6824AF003A9DFC /* Assets.xcassets */,
 				930BDA792A6824AF003A9DFC /* Preview Content */,
+				930BDA812A682EB6003A9DFC /* Reminder.swift */,
 			);
 			path = MakeItSo;
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				930BDA822A682EB6003A9DFC /* Reminder.swift in Sources */,
 				930BDA762A6824AA003A9DFC /* ContentView.swift in Sources */,
+				931A2D2A2A697149007324BB /* AddReminderView.swift in Sources */,
 				930BDA742A6824AA003A9DFC /* MakeItSoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

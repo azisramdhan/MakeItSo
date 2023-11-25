@@ -13,6 +13,7 @@
 		930BDA7B2A6824AF003A9DFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930BDA7A2A6824AF003A9DFC /* Preview Assets.xcassets */; };
 		930BDA822A682EB6003A9DFC /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930BDA812A682EB6003A9DFC /* Reminder.swift */; };
 		931A2D2A2A697149007324BB /* AddReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931A2D292A697149007324BB /* AddReminderView.swift */; };
+		9391EA6B2B11C3450038DFA2 /* RemindersListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9391EA6A2B11C3450038DFA2 /* RemindersListRowView.swift */; };
 		93EE17DC2ABE6B050001B5D5 /* RemindersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE17DB2ABE6B050001B5D5 /* RemindersListViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		930BDA7A2A6824AF003A9DFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		930BDA812A682EB6003A9DFC /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		931A2D292A697149007324BB /* AddReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderView.swift; sourceTree = "<group>"; };
+		9391EA6A2B11C3450038DFA2 /* RemindersListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersListRowView.swift; sourceTree = "<group>"; };
 		93EE17DB2ABE6B050001B5D5 /* RemindersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +98,7 @@
 			children = (
 				930BDA752A6824AA003A9DFC /* RemindersListView.swift */,
 				931A2D292A697149007324BB /* AddReminderView.swift */,
+				9391EA6A2B11C3450038DFA2 /* RemindersListRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93EE17DC2ABE6B050001B5D5 /* RemindersListViewModel.swift in Sources */,
+				9391EA6B2B11C3450038DFA2 /* RemindersListRowView.swift in Sources */,
 				930BDA822A682EB6003A9DFC /* Reminder.swift in Sources */,
 				930BDA762A6824AA003A9DFC /* RemindersListView.swift in Sources */,
 				931A2D2A2A697149007324BB /* AddReminderView.swift in Sources */,

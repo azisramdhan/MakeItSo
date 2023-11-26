@@ -13,11 +13,8 @@ struct RemindersListRowView: View {
     var reminder: Reminder
     
     var body: some View {
-        HStack {
-            Toggle(isOn: $reminder.isCompleted) { /* empty on purpose */ }
-                .toggleStyle(.reminder)
-            Text(reminder.title)
-        }
+        Toggle(isOn: $reminder.isCompleted) { Text(reminder.title) }
+            .toggleStyle(.reminder)
     }
 }
 

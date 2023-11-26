@@ -16,6 +16,10 @@ struct Reminder: Identifiable, Codable {
 }
 
 extension Reminder {
+  static let collectionName = "reminders"
+}
+
+extension Reminder {
     static let samples: [Reminder] = [
         Reminder(title: "Build sample app", isCompleted: true),
         Reminder(title: "Create tutorial"),

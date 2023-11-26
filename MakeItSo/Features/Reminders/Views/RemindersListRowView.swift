@@ -13,8 +13,13 @@ struct RemindersListRowView: View {
     var reminder: Reminder
     
     var body: some View {
-        Toggle(isOn: $reminder.isCompleted) { Text(reminder.title) }
-            .toggleStyle(.reminder)
+        HStack {
+            Toggle(isOn: $reminder.isCompleted) { /* no label, on purpose */}
+                .toggleStyle(.reminder)
+            Text(reminder.title)
+            Spacer()
+        }
+        .contentShape(Rectangle())
     }
 }
 

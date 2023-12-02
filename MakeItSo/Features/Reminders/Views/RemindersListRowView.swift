@@ -23,7 +23,7 @@ struct RemindersListRowView: View {
     }
 }
 
-struct Container: View {
+struct ReminderListRowContainer: View {
     @State var reminder = Reminder.samples[0]
     var body: some View {
         List {
@@ -35,7 +35,7 @@ struct Container: View {
 
 #Preview {
     NavigationView {
-        Container()
+        ReminderListRowContainer()
             .navigationTitle("Reminders")
     }
 }

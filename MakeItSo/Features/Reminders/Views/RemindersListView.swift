@@ -28,7 +28,6 @@ struct RemindersListView: View {
                     Button(role: .destructive, action: { viewModel.deleteReminder(reminder) }) {
                         Image(systemName: "trash")
                     }
-                    .tint(Color(UIColor.systemRed))
                 }
                 .onChange(of:reminder.isCompleted) { newValue in
                     viewModel.setCompleted(reminder, isCompleted: newValue)

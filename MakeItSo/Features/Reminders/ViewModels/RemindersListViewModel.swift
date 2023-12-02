@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Factory
 import Combine
 
 class RemindersListViewModel: ObservableObject {
@@ -15,7 +16,9 @@ class RemindersListViewModel: ObservableObject {
     @Published
     var errorMessage: String?
     
-    private var remindersRepository: RemindersRepository =  RemindersRepository()
+    // MARK: - Dependencies
+    @Injected(\.remindersRepository)
+    private var remindersRepository: RemindersRepository
     
     init() {
         remindersRepository

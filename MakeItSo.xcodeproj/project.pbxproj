@@ -42,6 +42,9 @@
 		9371936E2B136C1A0046ACCB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9371936D2B136C1A0046ACCB /* FirebaseStorage */; };
 		937193702B136C1A0046ACCB /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 9371936F2B136C1A0046ACCB /* FirebaseStorageCombine-Community */; };
 		937193732B137FFD0046ACCB /* RemindersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937193722B137FFD0046ACCB /* RemindersRepository.swift */; };
+		937193762B13A6010046ACCB /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 937193752B13A6010046ACCB /* Factory */; };
+		9371937A2B13A80E0046ACCB /* Firebase+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937193792B13A80E0046ACCB /* Firebase+Injection.swift */; };
+		9371937C2B13AA670046ACCB /* Repositories+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371937B2B13AA670046ACCB /* Repositories+Injection.swift */; };
 		9391EA6B2B11C3450038DFA2 /* RemindersListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9391EA6A2B11C3450038DFA2 /* RemindersListRowView.swift */; };
 		9391EA6E2B11F6DF0038DFA2 /* ReminderToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9391EA6D2B11F6DF0038DFA2 /* ReminderToggleStyle.swift */; };
 		93EE17DC2ABE6B050001B5D5 /* RemindersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE17DB2ABE6B050001B5D5 /* RemindersListViewModel.swift */; };
@@ -57,6 +60,8 @@
 		931A2D292A697149007324BB /* EditReminderDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReminderDetailsView.swift; sourceTree = "<group>"; };
 		937193382B1368E60046ACCB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		937193722B137FFD0046ACCB /* RemindersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersRepository.swift; sourceTree = "<group>"; };
+		937193792B13A80E0046ACCB /* Firebase+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Injection.swift"; sourceTree = "<group>"; };
+		9371937B2B13AA670046ACCB /* Repositories+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repositories+Injection.swift"; sourceTree = "<group>"; };
 		9391EA6A2B11C3450038DFA2 /* RemindersListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersListRowView.swift; sourceTree = "<group>"; };
 		9391EA6D2B11F6DF0038DFA2 /* ReminderToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderToggleStyle.swift; sourceTree = "<group>"; };
 		93EE17DB2ABE6B050001B5D5 /* RemindersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersListViewModel.swift; sourceTree = "<group>"; };
@@ -90,6 +95,7 @@
 				937193682B136C1A0046ACCB /* FirebasePerformance in Frameworks */,
 				937193602B136C1A0046ACCB /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
 				9371936E2B136C1A0046ACCB /* FirebaseStorage in Frameworks */,
+				937193762B13A6010046ACCB /* Factory in Frameworks */,
 				937193522B136C1A0046ACCB /* FirebaseDynamicLinks in Frameworks */,
 				937193562B136C1A0046ACCB /* FirebaseFirestoreCombine-Community in Frameworks */,
 				937193662B136C1A0046ACCB /* FirebaseMessaging in Frameworks */,
@@ -140,8 +146,25 @@
 			isa = PBXGroup;
 			children = (
 				937193722B137FFD0046ACCB /* RemindersRepository.swift */,
+				9371937B2B13AA670046ACCB /* Repositories+Injection.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		937193772B13A7F90046ACCB /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				937193782B13A7FD0046ACCB /* Services */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		937193782B13A7FD0046ACCB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				937193792B13A80E0046ACCB /* Firebase+Injection.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		9391EA6C2B11F6C30038DFA2 /* Style */ = {
@@ -155,6 +178,7 @@
 		93EE17D62ABE57B60001B5D5 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				937193772B13A7F90046ACCB /* Firebase */,
 				93EE17D72ABE62520001B5D5 /* Reminders */,
 			);
 			path = Features;
@@ -242,6 +266,7 @@
 				9371936B2B136C1A0046ACCB /* FirebaseRemoteConfigSwift */,
 				9371936D2B136C1A0046ACCB /* FirebaseStorage */,
 				9371936F2B136C1A0046ACCB /* FirebaseStorageCombine-Community */,
+				937193752B13A6010046ACCB /* Factory */,
 			);
 			productName = MakeItSo;
 			productReference = 930BDA702A6824AA003A9DFC /* MakeItSo.app */;
@@ -273,6 +298,7 @@
 			mainGroup = 930BDA672A6824AA003A9DFC;
 			packageReferences = (
 				9371933A2B136C190046ACCB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				937193742B13A6010046ACCB /* XCRemoteSwiftPackageReference "Factory" */,
 			);
 			productRefGroup = 930BDA712A6824AA003A9DFC /* Products */;
 			projectDirPath = "";
@@ -302,9 +328,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9391EA6E2B11F6DF0038DFA2 /* ReminderToggleStyle.swift in Sources */,
+				9371937A2B13A80E0046ACCB /* Firebase+Injection.swift in Sources */,
 				93EE17DC2ABE6B050001B5D5 /* RemindersListViewModel.swift in Sources */,
 				9391EA6B2B11C3450038DFA2 /* RemindersListRowView.swift in Sources */,
 				930BDA822A682EB6003A9DFC /* Reminder.swift in Sources */,
+				9371937C2B13AA670046ACCB /* Repositories+Injection.swift in Sources */,
 				930BDA762A6824AA003A9DFC /* RemindersListView.swift in Sources */,
 				937193732B137FFD0046ACCB /* RemindersRepository.swift in Sources */,
 				931A2D2A2A697149007324BB /* EditReminderDetailsView.swift in Sources */,
@@ -524,6 +552,14 @@
 				minimumVersion = 10.18.0;
 			};
 		};
+		937193742B13A6010046ACCB /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -661,6 +697,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9371933A2B136C190046ACCB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		937193752B13A6010046ACCB /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 937193742B13A6010046ACCB /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
